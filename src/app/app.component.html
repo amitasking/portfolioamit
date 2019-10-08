@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4805827302.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body style="font-family: 'Lato', sans-serif;">
+ 
+  <div class="container">
+
+    <div class="row mt-5">
+      <div class="col-md-12">
+          <div  class="card">
+              <mat-tab-group animationDuration = "1200ms" >
+                <mat-tab style="color: black"  active = "true">
+                    <ng-template mat-tab-label>
+                      
+                        <mat-icon  style=" padding-bottom: 40px; font-size: 40px; color:grey">person</mat-icon> 
+                      </ng-template>
+                  <app-profile></app-profile>
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <mat-icon  style=" padding-bottom: 40px; font-size: 40px; color:grey">menu_book</mat-icon> 
+                      </ng-template>
+                 
+                 <app-resume></app-resume>
+                </mat-tab>
+                <mat-tab   label = "One">
+                    <ng-template mat-tab-label>
+                     
+                        <mat-icon  style=" padding-bottom: 40px; font-size: 40px; color:grey">email</mat-icon> 
+                      </ng-template>
+                  <app-contact></app-contact>
+                </mat-tab>
+              </mat-tab-group>
+           
+            </div>
+          
+            </div>
+          
+      </div>
+    </div>
+   
+  
+</body>
+</html>
